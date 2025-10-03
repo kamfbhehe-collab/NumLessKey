@@ -1,0 +1,14 @@
+
+if SHIELD_NUMLESSKEY_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "numlesskey"
+
+endif
+
+if SHIELD_NUMLESSKEY_LEFT || SHIELD_NUMLESSKEY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
